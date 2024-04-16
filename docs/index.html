@@ -25,26 +25,31 @@
         .logo {
             position: absolute; /* Absolute position */
             left: 20px; /* Distance from right edge */
+            top: 20px;
             height: 50px; /* Adjust the size as needed */
         }
         h1.title {
             font-size: 38px;
             color: #333;
             margin: 0; /* Remove default margin */
+            padding-left: 70px;
         }
         ul {
             list-style-type: none;
             padding: 0;
             width: 100%; /* Take full width */
+            text-align: center;
         }
         li {
             margin: 10px 0;
+            display: inline-block; /* Make list items inline-blocks */
+            width: 100%; /* Full width for each item */
         }
         a {
             text-decoration: none;
             color: blue;
-            font-size: 20px; /* Increased font size for links */
-            display: block; /* Make links block elements so they take full width of li */
+            font-size: 25px; /* Increased font size for links */
+            display: inline; /* Make links block elements so they take full width of li */
         }
         a:hover {
             text-decoration: underline;
@@ -53,8 +58,8 @@
 </head>
 <body>
     <header>
-        <h1 class="title">Country Notes</h1>
         <img src="oecd-logo.png" alt="OECD Logo" class="logo" />
+        <h1 class="title">Country Notes</h1>
     </header>
     <ul>
         <li><a href="Austria.html">Austria</a></li>
