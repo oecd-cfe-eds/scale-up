@@ -5,23 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Notes</title>
     <style>
-        body {font-family: Arial, sans-serif;}
-        h1.title {font-size: 38px;}
-        h2 {font-size: 30px;}
-        h3 {font-size: 24px;}
-        h4 {font-size: 18px;}
-        h5 {font-size: 16px;}
-        h6 {font-size: 12px;}
-        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-        pre:not([class]) { background-color: white; }
-        ul {list-style-type: none;}
-        li {margin: 5px 0;}
-        a {text-decoration: none; color: blue;}
-        a:hover {text-decoration: underline;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .logo {
+            height: 50px; /* You can adjust the size as needed */
+        }
+        h1.title {
+            font-size: 38px;
+            color: #333;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 20px; /* Increased font size for links */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1 class="title">Country Notes</h1>
+    <header>
+        <h1 class="title">Country Notes</h1>
+        <img src="path-to-your-logo.png" alt="OECD Logo" class="logo" />
+    </header>
     <ul>
         <li><a href="Austria.html">Austria</a></li>
         <li><a href="Belgium.html">Belgium</a></li>
