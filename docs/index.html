@@ -24,7 +24,7 @@
         }
         .logo {
             position: absolute; /* Absolute position */
-            right: 20px; /* Distance from right edge */
+            left: 20px; /* Distance from right edge */
             height: 50px; /* Adjust the size as needed */
         }
         h1.title {
@@ -35,18 +35,16 @@
         ul {
             list-style-type: none;
             padding: 0;
-            width: 100%; /* Full width */
-            box-sizing: border-box; /* Padding and borders don't add to width */
-            padding: 20px; /* Spacing */
+            width: 100%; /* Take full width */
         }
         li {
-            justify-content: center;
             margin: 10px 0;
         }
         a {
             text-decoration: none;
             color: blue;
             font-size: 20px; /* Increased font size for links */
+            display: block; /* Make links block elements so they take full width of li */
         }
         a:hover {
             text-decoration: underline;
