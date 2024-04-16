@@ -16,23 +16,28 @@
         header {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Center items horizontally */
             align-items: center;
             padding: 10px 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative; /* Needed for absolute positioning of the logo */
         }
         .logo {
-            height: 50px; /* You can adjust the size as needed */
+            position: absolute; /* Absolute position */
+            right: 20px; /* Distance from right edge */
+            height: 50px; /* Adjust the size as needed */
         }
         h1.title {
             font-size: 38px;
-            margin: 10px 0;
             color: #333;
-            text-align: center;
+            margin: 0; /* Remove default margin */
         }
         ul {
             list-style-type: none;
             padding: 0;
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Padding and borders don't add to width */
+            padding: 20px; /* Spacing */
         }
         li {
             margin: 10px 0;
