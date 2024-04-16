@@ -16,40 +16,43 @@
         header {
             width: 100%;
             display: flex;
-            justify-content: center; /* Center items horizontally */
+            justify-content: center;
             align-items: center;
             padding: 10px 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            position: relative; /* Needed for absolute positioning of the logo */
+            position: relative;
         }
         .logo {
-            position: absolute; /* Absolute position */
-            left: 20px; /* Distance from right edge */
-            top: 20px;
-            height: 50px; /* Adjust the size as needed */
+            position: absolute;
+            left: 20px;
+            height: 50px;
         }
         h1.title {
             font-size: 38px;
             color: #333;
-            margin: 0; /* Remove default margin */
-            padding-left: 70px;
+            margin: 0;
+            position: absolute;
+            left: 50%; /* Center the title */
+            transform: translateX(-50%); /* Offset the title by half its width */
         }
-         ul {
+        .link-container {
+            width: 100%;
+            max-width: 960px; /* Adjust max-width as needed */
+            margin: 20px auto;
+        }
+        ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
         }
         li {
-            margin: 10px 5px; /* Adjusted for spacing */
+            margin: 10px 0;
             text-align: left; /* Align text to the left */
         }
         a {
             text-decoration: none;
-            color:  #006BB6;
-            font-size: 25px; /* Increased font size for links */
-            display: inline; /* Make links block elements so they take full width of li */
+            color: #0052cc; /* Deeper blue color */
+            font-size: 20px;
+            display: block;
         }
         a:hover {
             text-decoration: underline;
